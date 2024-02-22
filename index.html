@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOUTUBE_CLONE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <nav class="flex-div">
+        <div class="nav-left flex-div">
+            <img src="images/menu.png" style="width: 20px; height: 10px; text-decoration-color: white;" >
+            <img src="T.png" class="youtubelogo" >
+        </div>
+        <div class="nav-middle flex-div">
+            <div class="search-box flex-div">
+                <input type="text" placeholder="Search">
+                <img src="images/search.png"> </div>
+            <div class="mic-icon" style="width: 20px;">
+                <i class="fa-solid fa-microphone" style="color: #ebeff4;"></i>
+            </div>
+
+        </div>
+        <div class="nav-right flex-div">
+            <img src="images/upload.png" style="width: 20px;">
+            <img src="images/more.png" style="width: 20px;">
+            <img src="images/notification.png" style="color: white; width: 20px;">
+            <img src="images/sunita1.jpg" class="user-icon">
+            
+        </div>
+    </nav>
+    <!-- -------------sidebar------- -->
+     <div class="sidebar">
+        <class class="shortcut-links">
+            <a href=""><img src="images/home.png " ><p>Home</p></a>
+            <a href=""><img src="images/explore.png" ><p>Explore</p></a>
+            <a href=""><img src="images/subscriprion.png" ><p>Subscriprion</p></a>
+            <a href=""><img src="images/library.png" ><p>Library</p></a>
+            <a href=""><img src="images/history.png" ><p>History</p></a>
+            <a href=""><img src="images/playlist.png" ><p>Playlist</p></a>
+            <a href=""><img src="images/messages.png" ><p>Messages</p></a>
+            <a href=""><img src="images/show-more.png" ><p>Show More</p></a>
+            <hr>
+        </class>
+        <div class="subscribed-list">
+            <h3>SUBSCRIBED</h3>
+            <a href=""><img src="images/sunita1.jpg"><p>Sunita</p> </a>
+            <a href=""><img src="images/love babber.jpg"><p>Love Babber</p> </a>
+            <a href=""><img src="images/code with harry.jpg"><p>CodeWithHarry</p> </a>
+            <a href=""><img src="images/aman sir.jpg"><p>Aman Dhattarwal</p> </a>
+            <a href=""><img src="images/ishan sharma.jpg"><p>Ishan Sharma</p> </a>
+        </div>
+     </div>
+    <script >
+        var menuIcon = document.querySelector(".menu-icon");
+var sidebar = document.querySelector(".sidenav");
+
+menuIcon.onclick = function(){
+    sidebar.classList.toggle(".small-sidebar");
+}
+    </script>
+</body>
+</html>
